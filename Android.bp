@@ -18,10 +18,10 @@ cc_library_shared {
 
     product_variables: {
         bliss: {
-            device_support_legacy_hwfde: {
+            supports_legacy_hw_fde: {
                 cflags: ["-DLEGACY_HW_DISK_ENCRYPTION"],
             },
-            device_support_wait_for_qsee: {
+            should_skip_waiting_for_qsee: {
                 cflags: ["-DWAIT_FOR_QSEE"],
             },
         },
